@@ -1,10 +1,10 @@
 let pics = ['pic1.jpg','pic2.jpg','pic3.jpg']
 const slides = document.querySelectorAll('#slides .slide')
 const sliders = []
-let baseInter = 2
+let baseInter = 4
 slides.forEach(
     slide=>{
-        baseInter++
+        const inter = baseInter+1
         const slider = xlide(slide)
         pics = pics.reverse()
         pics.forEach(
@@ -20,11 +20,11 @@ slides.forEach(
         slider.addOptions(
             {
                 autoplay:1,
-                interval:baseInter,
+                interval:inter,
                 controls:1
             }
         )
-        console.log(slider)
+        baseInter++
     }
 )
 console.log(slides)

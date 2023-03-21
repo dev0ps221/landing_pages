@@ -12,14 +12,14 @@
 }
 #feed #maincontent .post{
     margin-right: calc(var(--inline-mar)*2);
-    padding: calc(var(--base-pad)*4);
     padding-top:unset;
-    /* padding-inline: calc(var(--base-pad)*4); */
-    /* background: var(--scnd-clr);
-    color: var(--scnd-text-clr); */
     margin-bottom: var(--base-mar);
 }
+#feed #maincontent .post:first-child{
+    padding-bottom: calc(var(--base-pad)*4);
+}
 #feed #maincontent .post:not(:first-child){
+    padding-block: calc(var(--base-pad)*4);
 }
 
 #feed #maincontent .post p:not(:first-child){

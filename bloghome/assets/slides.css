@@ -5,6 +5,9 @@
     min-height: var(--slides-height);
     background: var(--scnd-clr);
 }
+#slides .categorie{
+    margin: var(--base-mar);
+}
 #slides .slide{
     display: grid;
     overflow: hidden;
