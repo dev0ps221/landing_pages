@@ -5,9 +5,10 @@ function revealHidePost(target){
     const parent = target.parentNode
     if(parent){
         if(isRevealed(parent)){
+            target.innerHTML = 'plus'
             unReveal(parent)
-    
         }else{
+            target.innerHTML = 'moins'
             reveal(parent)
         }
     }

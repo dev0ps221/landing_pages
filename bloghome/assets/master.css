@@ -18,7 +18,8 @@
     /* //dimensions */
     --nav-height:60px;
     --slides-height:30vh;
-    --feed-template-columns:8fr 4fr;
+    --feed-template-columns:8fr 3fr;
+    --feed-gap:1fr;
     --button-width:250px;
 
     /* //colors */
@@ -28,10 +29,12 @@
 }
 *,*::after,*::before{
     position: relative;
+    isolation: isolate;
     padding: 0;
     margin: 0;
     list-style: none;
     text-decoration: none;
+    box-sizing: border-box;
 }
 a{
     font-weight: bolder;

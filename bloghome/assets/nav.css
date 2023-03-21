@@ -4,6 +4,7 @@ nav{
     height: var(--nav-height);
     background: var(--text-clr);
     padding-inline: var(--inline-pad);
+    z-index: 1;
 }
 nav,nav *{
     color: var(--bg-clr);

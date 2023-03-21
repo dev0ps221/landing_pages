@@ -4,9 +4,18 @@
     display: grid;
     grid-template-columns: var(--feed-template-columns);
 }
-
-
-
+#feed >*{
+    width: 98%;
+}
+#feed img{
+    width: 100%;
+}
+#feed #maincontent .post{
+    margin-right: calc(var(--inline-mar)*2);
+}
+#feed #maincontent .post:not(:first-child){
+    padding-block: var(--block-pad);
+}
 
 #feed #maincontent .post p:not(:first-child){
     display: none;
