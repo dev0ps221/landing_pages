@@ -1,0 +1,14 @@
+:root{
+    
+}
+*,*::after,*::before{
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+a{
+    font-weight: bolder;
+}
+p,button,textarea,input{
+    padding: var(--base-pad);
+}
