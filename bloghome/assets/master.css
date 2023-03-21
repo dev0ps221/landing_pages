@@ -58,10 +58,16 @@ h1,h2,h3,h4,h5,h6{
 a{
     font-weight: bolder;
 }
+img{
+    object-fit: cover;
+}
 p,button,textarea,input{
     padding: var(--base-pad);
     border-radius: var(--base-radius);
     border: none;
+}
+p{
+    padding-block: calc(var(--base-pad)*2);
 }
 button{
     margin-inline: auto;

@@ -11,9 +11,12 @@
     width: 100%;
 }
 #feed #maincontent .post{
-    margin-right: calc(var(--inline-mar)*2);
+    margin-right: var(--inline-mar);
     padding-top:unset;
     margin-bottom: var(--base-mar);
+}
+#feed #maincontent .post img{
+    height: 300px;
 }
 #feed #maincontent .post:first-child{
     padding-bottom: calc(var(--base-pad)*4);
