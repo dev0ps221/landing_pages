@@ -20,8 +20,7 @@ slides.forEach(
         slider.addOptions(
             {
                 autoplay:1,
-                interval:inter,
-                controls:1
+                interval:inter
             }
         )
         baseInter++

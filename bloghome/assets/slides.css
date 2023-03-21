@@ -6,6 +6,8 @@
     background: var(--scnd-clr);
 }
 #slides .categorie{
+    display: grid;
+    grid-template-rows: var(--cat-template-rows);
     margin: var(--base-mar);
 }
 #slides .slide{

@@ -10,7 +10,7 @@ nav{
     justify-content: space-between;
 }
 nav .logobox{
-    width: 10%;
+    width: var(--logobox-width);
 }
 nav .links > *{
     padding-inline: var(--base-pad);
@@ -30,4 +30,10 @@ nav img{
 }
 nav,nav *{
     color: var(--bg-clr);
+}
+
+@media screen and (max-width:640px) {
+    nav .links{
+        display: none;
+    }
 }

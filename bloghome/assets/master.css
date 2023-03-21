@@ -21,6 +21,7 @@
     --slides-height:30vh;
     --feed-template-columns:8fr 3fr;
     --slides-template-columns:repeat(4,3fr);
+    --cat-template-rows:2fr 10fr;
     --feed-gap:1fr;
     --button-width:250px;
     --base-radius:8px;
@@ -90,7 +91,8 @@ button{
 
 
         /* //dimensions */
-        --nav-height:40px;
+        --nav-height:50px;
+        --cat-template-rows:1fr 4fr;
     }
 }
 @media screen and (max-width:640px) {
@@ -109,7 +111,7 @@ button{
 
         --slides-template-columns:repeat(2,6fr);
         /* //dimensions */
-        --nav-height:30px;
+        --nav-height:40px;
     }
 }
 
