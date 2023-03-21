@@ -1,4 +1,6 @@
 #feed{
+    padding-block:var(--block-pad);
+    padding-inline: var(--inline-pad);
     display: grid;
     grid-template-columns: var(--feed-template-columns);
 }

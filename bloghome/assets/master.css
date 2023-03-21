@@ -2,9 +2,9 @@
     /* //paddings */
     --base-pad:10px;
     --base-mar:5px;
-    --inline-pad:15rem;
+    --inline-pad:25rem;
     --inline-mar:5rem;
-    --block-pad:10rem;
+    --block-pad:4rem;
     --block-mar:2rem;
 
     /* //font */
@@ -46,7 +46,7 @@ p,button,textarea,input{
         --base-mar:4px;
         --inline-pad:10rem;
         --inline-mar:4rem;
-        --block-pad:8rem;
+        --block-pad:4rem;
         --block-mar:2rem;
 
 
@@ -60,10 +60,10 @@ p,button,textarea,input{
         /* //paddings */
         --base-pad:8px;
         --base-mar:4px;
-        --inline-pad:5rem;
-        --inline-mar:2.5rem;
-        --block-pad:2.5rem;
-        --block-mar:1rem;
+        --inline-pad:2.5rem;
+        --inline-mar:1.25rem;
+        --block-pad:1rem;
+        --block-mar:1.25rem;
 
 
         --feed-template-columns:12fr;
