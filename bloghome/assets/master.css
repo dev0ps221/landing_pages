@@ -17,11 +17,13 @@
 
     /* //dimensions */
     --nav-height:60px;
+    --slides-height:30vh;
 
 
     /* //colors */
     --text-clr:#333;
     --bg-clr:#fff;
+    --scnd-clr:#555;
 }
 *,*::after,*::before{
     position: relative;

@@ -1,4 +1,6 @@
 #slides{
     display: flex;
     padding-inline: var(--inline-pad);
+    min-height: var(--slides-height);
+    background: var(--scnd-clr);
 }
