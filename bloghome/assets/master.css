@@ -19,6 +19,7 @@
     --nav-height:60px;
     --slides-height:30vh;
     --feed-template-columns:8fr 4fr;
+    --button-width:250px;
 
     /* //colors */
     --text-clr:#333;
@@ -37,6 +38,10 @@ a{
 }
 p,button,textarea,input{
     padding: var(--base-pad);
+}
+button{
+    margin-inline: auto;
+    width: var(--button-width);
 }
 @media screen and (max-width:992px) {
     :root{
