@@ -24,7 +24,9 @@
     --bg-clr:#fff;
 }
 *,*::after,*::before{
+    position: relative;
     padding: 0;
+    margin: 0;
     list-style: none;
     text-decoration: none;
 }

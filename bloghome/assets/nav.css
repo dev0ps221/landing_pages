@@ -3,6 +3,7 @@ nav{
     top: 0;
     height: var(--nav-height);
     background: var(--text-clr);
+    padding-inline: var(--inline-pad);
 }
 nav,nav *{
     color: var(--bg-clr);

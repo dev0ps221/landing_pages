@@ -1,0 +1,4 @@
+#slides{
+    display: flex;
+    padding-inline: var(--inline-pad);
+}
