@@ -1,5 +1,22 @@
 :root{
-    
+    /* //paddings */
+    --base-pad:10px;
+    --base-mar:5px;
+    --inline-pad:15rem;
+    --inline-mar:5rem;
+    --block-pad:10rem;
+    --block-mar:2rem;
+
+    /* //font */
+    --text:1rem;
+    --small-text:.8rem;
+    --smaller-text:.5rem;
+    --tiny-text:.3rem;
+    --big-text:1.2rem;
+    --huge-text:1.7rem;
+
+    /* //dimensions */
+    --nav-height:60px;
 }
 *,*::after,*::before{
     padding: 0;
@@ -11,4 +28,36 @@ a{
 }
 p,button,textarea,input{
     padding: var(--base-pad);
+}
+@media screen and (max-width:992px) {
+    :root{
+
+        /* //paddings */
+        --base-pad:8px;
+        --base-mar:4px;
+        --inline-pad:10rem;
+        --inline-mar:4rem;
+        --block-pad:8rem;
+        --block-mar:2rem;
+
+
+        /* //dimensions */
+        --nav-height:40px;
+    }
+}
+@media screen and (max-width:640px) {
+    :root{
+        
+        /* //paddings */
+        --base-pad:8px;
+        --base-mar:4px;
+        --inline-pad:5rem;
+        --inline-mar:2.5rem;
+        --block-pad:2.5rem;
+        --block-mar:1rem;
+
+
+        /* //dimensions */
+        --nav-height:30px;
+    }
 }
