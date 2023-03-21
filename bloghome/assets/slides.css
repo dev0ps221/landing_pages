@@ -1,6 +1,13 @@
 #slides{
-    display: flex;
+    display: grid;
+    grid-template-columns: var(--slides-template-columns);
     padding-inline: var(--inline-pad);
     min-height: var(--slides-height);
     background: var(--scnd-clr);
+}
+#slides .slide{
+    display: grid;
+    overflow: hidden;
+    height: var(--slides-height) - var(--inline-pad);
+    margin-block: var(--base-mar);
 }
