@@ -2,7 +2,8 @@ nav{
     position: sticky;
     top: 0;
     height: var(--nav-height);
-    background: var(--text-clr);
+    background: var(--scnd-clr);
+    color: var(--scnd-text-clr);
     padding-inline: var(--inline-pad);
     z-index: 1;
 }

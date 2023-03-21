@@ -5,16 +5,21 @@
     grid-template-columns: var(--feed-template-columns);
 }
 #feed >*{
-    width: 98%;
+    width: 100%;
 }
 #feed img{
     width: 100%;
 }
 #feed #maincontent .post{
     margin-right: calc(var(--inline-mar)*2);
+    padding: calc(var(--base-pad)*4);
+    padding-top:unset;
+    /* padding-inline: calc(var(--base-pad)*4); */
+    /* background: var(--scnd-clr);
+    color: var(--scnd-text-clr); */
+    margin-bottom: var(--base-mar);
 }
 #feed #maincontent .post:not(:first-child){
-    padding-block: var(--block-pad);
 }
 
 #feed #maincontent .post p:not(:first-child){
@@ -23,4 +28,11 @@
 
 #feed #maincontent .post.revealed p{
     display: block !important;
+}
+@media screen and (max-width:640px) {
+    
+    #feed #maincontent .post{
+        margin-inline: unset;
+        padding: var(--base-pad);
+    }
 }

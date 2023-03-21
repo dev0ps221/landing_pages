@@ -13,7 +13,8 @@
     --smaller-text:.5rem;
     --tiny-text:.3rem;
     --big-text:1.2rem;
-    --huge-text:1.7rem;
+    --huge-text:2rem;
+    --font-family:sans-serif;
 
     /* //dimensions */
     --nav-height:60px;
@@ -21,11 +22,19 @@
     --feed-template-columns:8fr 3fr;
     --feed-gap:1fr;
     --button-width:250px;
+    --base-radius:8px;
 
     /* //colors */
     --text-clr:#333;
+    --scnd-text-clr:#222;
     --bg-clr:#fff;
     --scnd-clr:#555;
+    
+
+    /* //tests */
+    --bg-clr:#222;
+    --text-clr:#fff;
+    --scnd-clr:orange;
 }
 *,*::after,*::before{
     position: relative;
@@ -36,15 +45,30 @@
     text-decoration: none;
     box-sizing: border-box;
 }
+h1,h2,h3,h4,h5,h6{
+    font-size: var(--huge-text);
+    background: var(--scnd-clr);
+    color: var(--scnd-text-clr);
+    padding-top: var(--base-pad);
+    margin-bottom: var(--base-mar);
+    border-bottom: 2px solid var(--bg-clr);
+    padding-inline: var(--base-pad);
+}
 a{
     font-weight: bolder;
 }
 p,button,textarea,input{
     padding: var(--base-pad);
+    border-radius: var(--base-radius);
+    border: none;
 }
 button{
     margin-inline: auto;
     width: var(--button-width);
+    background: var(--text-clr);
+    font-weight: bolder;
+    font-size: var(--big-text);
+    color: var(--scnd-text-clr);
 }
 @media screen and (max-width:992px) {
     :root{
@@ -52,9 +76,9 @@ button{
         /* //paddings */
         --base-pad:8px;
         --base-mar:4px;
-        --inline-pad:10rem;
-        --inline-mar:4rem;
-        --block-pad:4rem;
+        --inline-pad:4rem;
+        --inline-mar:2rem;
+        --block-pad:2rem;
         --block-mar:2rem;
 
 
@@ -68,8 +92,8 @@ button{
         /* //paddings */
         --base-pad:8px;
         --base-mar:4px;
-        --inline-pad:2.5rem;
-        --inline-mar:1.25rem;
+        --inline-pad:1.5rem;
+        --inline-mar:.25rem;
         --block-pad:1rem;
         --block-mar:1.25rem;
 
@@ -79,4 +103,12 @@ button{
         /* //dimensions */
         --nav-height:30px;
     }
+}
+
+
+
+body{
+    background: var(--bg-clr);
+    color: var(--text-clr);
+    font-family: var(--font-family);
 }
