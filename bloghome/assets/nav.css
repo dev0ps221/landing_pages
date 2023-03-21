@@ -1,0 +1,9 @@
+nav{
+    position: sticky;
+    top: 0;
+    height: var(--nav-height);
+    background: var(--text-clr);
+}
+nav,nav *{
+    color: var(--bg-clr);
+}

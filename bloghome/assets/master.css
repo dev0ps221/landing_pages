@@ -17,6 +17,11 @@
 
     /* //dimensions */
     --nav-height:60px;
+
+
+    /* //colors */
+    --text-clr:#333;
+    --bg-clr:#fff;
 }
 *,*::after,*::before{
     padding: 0;
