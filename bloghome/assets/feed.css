@@ -1,0 +1,4 @@
+#feed{
+    display: grid;
+    grid-template-columns: var(--feed-template-columns);
+}

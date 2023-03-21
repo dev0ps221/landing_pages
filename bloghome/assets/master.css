@@ -18,7 +18,7 @@
     /* //dimensions */
     --nav-height:60px;
     --slides-height:30vh;
-
+    --feed-template-columns:8fr 4fr;
 
     /* //colors */
     --text-clr:#333;
@@ -65,6 +65,8 @@ p,button,textarea,input{
         --block-pad:2.5rem;
         --block-mar:1rem;
 
+
+        --feed-template-columns:12fr;
 
         /* //dimensions */
         --nav-height:30px;
