@@ -18,14 +18,9 @@
 
     /* //dimensions */
     --nav-height:60px;
-    --slides-height:30vh;
-    --feed-template-columns:8fr 3fr;
-    --slides-template-columns:repeat(4,3fr);
-    --cat-template-rows:2fr 10fr;
-    --feed-gap:1fr;
     --button-width:250px;
-    --base-radius:8px;
     --logobox-width:10%;
+
     /* //colors */
     --text-clr:#333;
     --scnd-text-clr:#222;
@@ -92,7 +87,6 @@ button{
 
         /* //dimensions */
         --nav-height:50px;
-        --cat-template-rows:1fr 4fr;
         --logobox-width:20%;
     }
 }
@@ -107,11 +101,7 @@ button{
         --block-pad:1rem;
         --block-mar:1.25rem;
 
-
-        --feed-template-columns:12fr;
-
-        --slides-template-columns:repeat(2,6fr);
-        /* //dimensions */
+    /* //dimensions */
         --nav-height:40px;
         --logobox-width:30%;
     }
