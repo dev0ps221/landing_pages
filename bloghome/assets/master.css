@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'brandon-grotesque';
+    src: url('/assets/BrandonGrotesque-Light.ttf');
+}
 :root{
     /* //paddings */
     --base-pad:10px;
@@ -15,6 +19,7 @@
     --big-text:1.2rem;
     --huge-text:2rem;
     --font-family:sans-serif;
+    --font-family:'brandon-grotesque';
 
     /* //dimensions */
     --nav-height:60px;
