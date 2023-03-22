@@ -28,18 +28,33 @@ nav img{
 nav,nav *{
     color: var(--bg-clr);
 }
+nav .burger{
+    display: none;
+}
 
 @media screen and (max-width:640px) {
+    nav,nav *{
+        transition: .4s;
+    }
     nav .links{
-        display: none;
+        display: grid;
+        background-color: var(--scnd-clr);
+        position: absolute;
+        top: var(--nav-height);
+        height: 0;
+        overflow: hidden;
+        width: 100%;
+        margin: 0;
+        left: 0;
+        text-align: center;
     }
     nav .burger{
+        display: grid;
         cursor: pointer;
         position: relative;
         width: 10%;
     }
     nav .burger::after,nav .burger::before{
-        transition: .8s;
         position: absolute;
         top: 20%;
         content: "";
@@ -50,6 +65,9 @@ nav,nav *{
     nav .burger::after{
         top: unset;
         bottom: 20%;
+    }
+    nav.expanded .links{
+        height: calc(100vh - var(--nav-height));
     }
     nav.expanded .burger::before,nav.expanded .burger::after{
         top: 50%;
