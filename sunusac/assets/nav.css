@@ -71,6 +71,9 @@ nav .burger{
         left: 0;
         text-align: center;
     }
+    nav .links > *{
+        color: var(--scnd-text-clr);
+    }
     nav .burger{
         margin: var(--base-mar);
         z-index: 10;
