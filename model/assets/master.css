@@ -91,6 +91,7 @@ button{
     font-weight: bolder;
     font-size: var(--big-text);
     color: var(--btn-text-clr) !important;
+    cursor: pointer;
 }
 @media screen and (max-width:992px) {
     :root{

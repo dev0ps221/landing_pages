@@ -3,5 +3,21 @@
 }
 #categories .liste{
     display:grid ;
+    width: 100%;
     grid-template-columns: repeat(4,3fr);
+}
+#categories .categorie img{
+    width: 100%;
+    height: 100%;
+}
+#categories .categorie{
+    width:calc( 100% - (var(--base-mar)*2));
+    margin: calc(var(--base-mar)*2);
+    display: grid;
+    grid-template-rows: 4fr 1fr 1fr;
+}
+@media screen and (max-width:600px) {
+    #categories .liste{
+        grid-template-columns: repeat(2,6fr);
+    }
 }
