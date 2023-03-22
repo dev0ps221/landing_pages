@@ -94,7 +94,12 @@ button{
 }
 @media screen and (max-width:640px) {
     :root{
-        
+
+
+        /* //font */
+        --huge-text:1.5rem;
+
+
         /* //paddings */
         --base-pad:8px;
         --base-mar:4px;
@@ -103,7 +108,7 @@ button{
         --block-pad:1rem;
         --block-mar:1.25rem;
 
-    /* //dimensions */
+        /* //dimensions */
         --nav-height:40px;
         --logobox-width:30%;
         --rubriques-template-columns:repeat(2,6fr);

@@ -9,8 +9,10 @@
     display: grid;
     align-items: center;
     text-align: center;
+    width: 100%;
 }
 #rubriques .liste .rubrique >*{
+    font-size: var(--big-text);
     grid-column: 1;
     grid-row: 1/-1;
     background: var(--bg-clr);
@@ -19,10 +21,4 @@
     width: 100%;
     height: 100%;
     z-index: -1;
-}
-#rubriques .liste .rubrique >*:not(img){
-    opacity: .3;
-}
-#rubriques .liste .rubrique:hover >*:not(img),#rubriques .liste .rubrique:focus >*:not(img){
-    opacity: 1;
 }
