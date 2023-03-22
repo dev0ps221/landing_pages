@@ -13,11 +13,26 @@ function reduce(elem){
         elem.classList.remove('expanded')
     }
 }
-function hideExpandNav(e){
-    if(isExpanded(e.currentTarget.parentNode)){
-        reduce(e.currentTarget.parentNode)
+function getNav(elem){
+    if(elem.tagName.toLowerCase()=='nav'){
+        return elem
     }else{
-        expand(e.currentTarget.parentNode)
+        if(!elem.parentNode){
+            return null
+        }else{
+            if(elem.parentNode.tagName.toLowerCase()=='nav'){
+                return elem.parentNode
+            }else{
+                return getNav(elem.parentNode)
+            }
+        }
+    }
+}
+function hideExpandNav(e){
+    if(isExpanded(getNav(e.currentTarget.parentNode))){
+        reduce(getNav(e.currentTarget.parentNode))
+    }else{
+        expand(getNav(e.currentTarget.parentNode))
     }
 }
 document.querySelectorAll('nav a').forEach(
