@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/master.css">
+    <link rel="stylesheet" href="assets/xlide.css">
     <title>ACCUEIL &#8211; HOMESHOP</title>
 </head>
 <body>
-    
+    <script src="assets/xlide.js"></script>
 
     <!-- //nav -->
         <link rel="stylesheet" href="assets/nav.css">
@@ -18,7 +19,7 @@
             </div>
             <div class="links">
                 <a href="#">ACCUEIL</a>
-                <a href="#">PROMOS</a>
+                <a href="#">BOUTIQUE</a>
                 <a href="#">RUBRIQUES</a>
                 <a href="#">MON PANIER</a>
             </div>
@@ -140,5 +141,32 @@
     </div>
     <!-- //endliste rubriques -->
 
+    <!-- //twoads -->
+        <div class="twoads">
+            <div class="ad">
+            </div>
+            <div class="ad">
+            </div>
+            <script>
+                document.querySelectorAll('.twoads .ad').forEach(
+                    (adbox,idx)=>{
+
+                        const slide = xlide(adbox)
+                            .addImages(
+                                ['assets/pictures/zonepub.avif','assets/pictures/zonepub.avif','assets/pictures/zonepub.avif']
+                            )
+                                .addOption('autoplay')
+                                    .addOption('interval',2000)
+                        
+                        if(!idx%2){
+                            slide
+                                .addOption('interval',4000)
+                                    .addOption('vertical')
+                        }
+                    }
+                )
+            </script>
+        </div>
+    <!-- //endtwoads -->
 </body>
 </html>
