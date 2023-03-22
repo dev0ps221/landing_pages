@@ -1,0 +1,17 @@
+.featuredbrand{
+    padding-inline: var(--inline-pad);
+}
+.featuredbrand .liste{
+    display: grid;
+    grid-template-columns: repeat(3,4fr);
+}
+.featuredbrand .produit{
+    display: grid;
+    margin: var(--base-mar);
+}
+.featuredbrand .produit img{
+    width: 100%;
+}
+.featuredbrand .actionbox{
+    text-align: center;
+}
