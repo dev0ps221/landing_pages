@@ -103,7 +103,7 @@ button{
         /* //paddings */
         --base-pad:8px;
         --base-mar:4px;
-        --inline-pad:1.5rem;
+        --inline-pad:0.2rem;
         --inline-mar:.25rem;
         --block-pad:1rem;
         --block-mar:1.25rem;
