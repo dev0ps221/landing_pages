@@ -1,0 +1,29 @@
+#tendances{
+    padding-inline:var(--inline-pad);
+}
+#tendances .liste{
+    display: grid;
+    grid-template-columns: repeat(3,4fr);
+}
+#tendances .tendance{
+    padding: var(--base-pad);
+    margin: var(--base-pad);
+    background: var(--scnd-clr);
+}
+#tendances .tendance *{
+    color: var(--bg-clr) !important;
+}
+#tendances .tendance img{
+    width: 100%;
+}
+
+@media screen and (max-width:640px) {
+    #tendances .liste{
+        display: grid;
+        grid-template-columns: repeat(2,6fr);
+    }
+    
+    #tendances img{
+        height: 40vh;
+    }
+}

@@ -6,5 +6,7 @@
     min-height:18vh ;
 }
 @media screen and (max-width:640px){
-    
+    .twoads{
+        min-height:25vh ;
+    }
 }
