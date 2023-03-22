@@ -29,9 +29,10 @@
     
 
     /* //tests */
-    --bg-clr:#00d;
+    --bg-clr:#003;
     --text-clr:#fff;
-    --scnd-clr:#333;
+    --scnd-clr:#00d;
+    --scnd-text-clr:#ddd;
 }
 *,*::after,*::before{
     position: relative;
