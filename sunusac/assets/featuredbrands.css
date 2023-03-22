@@ -11,6 +11,7 @@
 }
 .featuredbrand .produit img{
     width: 100%;
+    height: 40vh;
 }
 .featuredbrand .actionbox{
     text-align: center;
