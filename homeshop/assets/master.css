@@ -59,7 +59,7 @@ img{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 var(--scnd-clr);
     object-fit: cover;
 }
-p,button,textarea,input{
+p,button,textarea,input,ul{
     padding: var(--base-pad);
     border-radius: var(--base-radius);
     border: none;

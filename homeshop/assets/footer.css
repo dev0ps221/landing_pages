@@ -6,4 +6,6 @@ footer *{
 }
 footer .wrapper{
     padding-inline:var(--inline-pad) ;
+    display: grid;
+    grid-template-columns: repeat(2,3.5fr) 5fr ;
 }
