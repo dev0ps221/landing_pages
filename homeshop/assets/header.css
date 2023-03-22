@@ -22,3 +22,8 @@ header h1{
     margin-inline: auto;
     width: 80%;
 }
+@media screen and (max-width:640px) {
+    header{
+        height: 40vh;
+    }
+}
