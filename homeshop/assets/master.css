@@ -55,6 +55,9 @@ h1,h2,h3,h4,h5,h6{
 a{
     font-weight: bolder;
 }
+a:hover{
+    opacity: .6;
+}
 img{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 var(--scnd-clr);
     object-fit: cover;
@@ -63,6 +66,11 @@ p,button,textarea,input,ul{
     padding: var(--base-pad);
     border-radius: var(--base-radius);
     border: none;
+}
+textarea,input{
+    margin-block: var(--base-mar);
+    background-color: var(--bg-clr) !important;
+    color: var(--text-clr) !important;
 }
 p{
     padding-block: calc(var(--base-pad)*2);

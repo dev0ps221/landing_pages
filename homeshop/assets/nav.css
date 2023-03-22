@@ -15,9 +15,6 @@ nav .logobox{
 nav .links > *{
     padding-inline: var(--base-pad);
 }
-nav .links > *:hover,nav .links > *:focus{
-    opacity: .6;
-}
 nav > *{
     display: flex;
     align-items: center;
