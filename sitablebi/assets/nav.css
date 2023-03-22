@@ -4,13 +4,9 @@ nav{
     height: var(--nav-height);
     background: var(--scnd-clr);
     color: var(--scnd-text-clr);
-    padding-inline: var(--inline-pad);
     z-index: 1;
     display: flex;
     justify-content: space-between;
-}
-nav .logobox{
-    width: var(--logobox-width);
 }
 nav .links > *{
     padding-inline: var(--base-pad);
@@ -27,7 +23,7 @@ nav img{
     height: var(--nav-height);
 }
 nav,nav *{
-    color: var(--bg-clr);
+    color: var(--scnd-text-clr);
 }
 nav .burger{
     display: none;

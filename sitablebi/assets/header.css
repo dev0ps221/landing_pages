@@ -1,0 +1,29 @@
+header{
+    display: grid;
+    background: var(--scnd-clr);
+}
+header > *{
+    padding-inline: var(--inline-pad);
+}
+header .logobox{
+    display: grid;
+    background: var(--bg-clr);
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    width: var(--logobox-width);
+    height: var(--logobox-height);
+}
+header .logobox img{
+    object-fit:unset;
+    width: 50%;
+    height: 90%;
+    box-shadow: none;
+}
+header .heading{
+    padding: 0;
+}
+header .heading img{
+    width: 100%;
+    height: 100%;
+}
