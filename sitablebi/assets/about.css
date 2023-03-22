@@ -1,0 +1,13 @@
+#about{
+    padding-inline: var(--inline-pad);
+}
+#about p{
+    text-align: center;
+}
+#about > h1{
+    position: relative;
+    isolation: isolate;
+}
+#about > h1::before{
+    position: absolute;
+}

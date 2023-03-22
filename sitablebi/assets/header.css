@@ -3,6 +3,7 @@ header{
     background: var(--scnd-clr);
 }
 header > *{
+    z-index: 1;
     padding-inline: var(--inline-pad);
 }
 header .logobox{
