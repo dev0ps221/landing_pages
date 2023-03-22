@@ -1,0 +1,23 @@
+#souscats{
+    display: grid;
+    padding-inline: var(--inline-pad);
+    grid-template-columns: repeat(3,4fr);
+}
+#souscats .souscat{
+    display: grid;
+    isolation: isolate;
+    position: relative;
+    width: calc(100% - var(--block-mar)) ;
+    margin-block: var(--block-mar);
+}
+#souscats .souscat > *{
+    width: 100%;
+    height: 100%;
+    grid-row: 1/-1;
+    grid-column: 1;
+}
+.souscat .data > * {
+    background: var(--scnd-clr);
+    font-weight: bolder;
+    opacity: .9;
+}
