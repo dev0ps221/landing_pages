@@ -11,3 +11,10 @@
 >    <img src='homeshop/preview2.png' alt='preview homeshop' width=300 />
 > </div>
 > <a target='_blank' href='https://dev0ps221.github.io/landing_pages/homeshop'>VOIR LA DEMO</a>
+
+## SI TABLE BI
+> <div style='display:grid;grid-template-columns:repeaat(2,6fr);'>
+>    <img src='homeshop/preview2.png' alt='preview homeshop'  width=300 />
+>    <img src='homeshop/preview5.png' alt='preview homeshop' width=300 />
+> </div>
+> <a target='_blank' href='https://dev0ps221.github.io/landing_pages/sitablebi'>VOIR LA DEMO</a>
