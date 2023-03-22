@@ -30,14 +30,14 @@ nav .burger{
 }
 
 @media screen and (max-width:640px) {
+    header{
+        height: auto;
+    }
     nav,nav *{
         transition: .4s;
-    }
-    nav{
-        isolation: unset;
+        z-index: 1;
     }
     nav .links{
-        z-index: 10;
         display: grid;
         background-color: var(--scnd-clr);
         position: absolute;
