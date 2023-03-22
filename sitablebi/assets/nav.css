@@ -33,7 +33,11 @@ nav .burger{
     nav,nav *{
         transition: .4s;
     }
+    nav{
+        isolation: unset;
+    }
     nav .links{
+        z-index: 10;
         display: grid;
         background-color: var(--scnd-clr);
         position: absolute;
@@ -64,7 +68,7 @@ nav .burger{
         bottom: 20%;
     }
     nav.expanded .links{
-        height: calc(100vh - var(--nav-height));
+        min-height: calc(100vh - var(--nav-height));
     }
     nav.expanded .burger::before,nav.expanded .burger::after{
         top: 50%;

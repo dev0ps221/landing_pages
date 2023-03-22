@@ -1,5 +1,6 @@
 footer{
     background: var(--scnd-clr);
+    z-index: -1;
 }
 footer *{
     color: var(--scnd-text-clr);
