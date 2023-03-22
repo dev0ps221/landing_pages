@@ -70,6 +70,17 @@
         </div>
     <!-- //endfeatured -->
 
+    <!-- //twoads -->
+        <link rel="stylesheet" href="assets/twoads.css">
+        <div class="twoads">
+            <div class="ad">
+            </div>
+            <div class="ad">
+            </div>
+        </div>
+        <script src="assets/twoads.js"></script>
+    <!-- //endtwoads -->
+    
     <!-- //liste rubriques -->
     <link rel="stylesheet" href="assets/rubriques.css">
     <div id="rubriques">
@@ -142,31 +153,14 @@
     <!-- //endliste rubriques -->
 
     <!-- //twoads -->
+        <link rel="stylesheet" href="assets/twoads.css">
         <div class="twoads">
             <div class="ad">
             </div>
             <div class="ad">
             </div>
-            <script>
-                document.querySelectorAll('.twoads .ad').forEach(
-                    (adbox,idx)=>{
-
-                        const slide = xlide(adbox)
-                            .addImages(
-                                ['assets/pictures/zonepub.avif','assets/pictures/zonepub.avif','assets/pictures/zonepub.avif']
-                            )
-                                .addOption('autoplay')
-                                    .addOption('interval',2000)
-                        
-                        if(!idx%2){
-                            slide
-                                .addOption('interval',4000)
-                                    .addOption('vertical')
-                        }
-                    }
-                )
-            </script>
         </div>
+        <script src="assets/twoads.js"></script>
     <!-- //endtwoads -->
 </body>
 </html>

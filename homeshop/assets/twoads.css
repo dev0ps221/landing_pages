@@ -1,0 +1,10 @@
+.twoads{
+    padding-inline:var(--inline-pad) ;
+    padding-block:calc(var(--block-pad) /4);
+    display: grid;
+    grid-template-columns: repeat(2,6fr);
+    min-height:18vh ;
+}
+@media screen and (max-width:640px){
+    
+}
