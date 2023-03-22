@@ -129,7 +129,7 @@ button{
         --nav-height:40px;
         --logobox-width:100%;
         --logobox-height:66px;
-        --heading-height:122px;
+        --heading-height:372px;
         --rubriques-template-columns:repeat(2,6fr);
         --fav-template-columns:repeat(2,6fr);
     }

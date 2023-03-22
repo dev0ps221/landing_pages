@@ -1,7 +1,19 @@
 header .heading{
     height: var(--heading-height);
+    display: grid;
+}
+header .heading > *{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    grid-row: 1/-1;
+    grid-column:1 ;
 }
 header .heading img{
+    z-index: -1;
     width: 100%;
     height: 100%;
 }
