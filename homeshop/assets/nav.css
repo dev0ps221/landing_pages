@@ -33,4 +33,33 @@ nav,nav *{
     nav .links{
         display: none;
     }
+    nav .burger{
+        cursor: pointer;
+        position: relative;
+        width: 10%;
+    }
+    nav .burger::after,nav .burger::before{
+        transition: .8s;
+        position: absolute;
+        top: 20%;
+        content: "";
+        width: 100%;
+        height: 20%;
+        background-color: var(--scnd-text-clr);
+    }
+    nav .burger::after{
+        top: unset;
+        bottom: 20%;
+    }
+    nav .burger.crossed::before,nav .burger.crossed::after{
+        top: 50%;
+    }
+    nav .burger.crossed::before{
+        transform: rotate(50deg);
+    }
+    nav .burger.crossed::after{
+        transform: rotate(-50deg);
+    }
+
+
 }

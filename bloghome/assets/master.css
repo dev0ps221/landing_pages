@@ -13,6 +13,7 @@
 
     /* //font */
     --text:1rem;
+    --text:16px;
     --small-text:.8rem;
     --smaller-text:.5rem;
     --tiny-text:.3rem;
@@ -136,4 +137,5 @@ body{
     background: var(--bg-clr);
     color: var(--text-clr);
     font-family: var(--font-family);
+    font-size: var(--text);
 }
