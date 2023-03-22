@@ -1,0 +1,29 @@
+footer{
+    background: var(--scnd-clr);
+}
+footer *{
+    color: var(--scnd-text-clr);
+}
+footer .wrapper{
+    padding-inline:var(--inline-pad) ;
+    display: grid;
+    grid-template-columns: repeat(2,3.5fr) 5fr ;
+}
+footer .wrapper *{
+    width: 100%;
+}
+footer .copyrights{
+    text-align: center;
+    padding: var(--base-pad);
+    background: var(--scnd-text-clr);
+    color: var(--scnd-clr);
+}
+
+footer .copyrights *{
+    color: var(--scnd-clr);
+}
+@media screen and (max-width:640px){
+    footer .wrapper{
+        grid-template-columns: 12fr ;
+    }
+}
