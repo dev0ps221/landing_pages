@@ -45,8 +45,6 @@
     --btn-text-clr:#eee;
 }
 *,*::after,*::before{
-    position: relative;
-    isolation: isolate;
     padding: 0;
     margin: 0;
     list-style: none;

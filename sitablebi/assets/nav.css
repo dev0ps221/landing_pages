@@ -35,12 +35,12 @@ nav .burger{
     }
     nav,nav *{
         transition: .4s;
-        z-index: 1;
     }
     nav .links{
+        z-index: 1;
         display: grid;
         background-color: var(--scnd-clr);
-        position: absolute;
+        position: fixed;
         top: var(--nav-height);
         height: 0;
         overflow: hidden;
@@ -50,6 +50,7 @@ nav .burger{
         text-align: center;
     }
     nav .burger{
+        z-index: 10;
         display: grid;
         cursor: pointer;
         position: relative;
