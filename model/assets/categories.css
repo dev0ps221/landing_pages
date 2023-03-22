@@ -1,6 +1,8 @@
 #categories{
     padding-inline: var(--inline-pad);
     padding-block: var(--block-pad);
+    text-align: center;
+    font-weight: bolder;
 }
 #categories .liste{
     display:grid ;
