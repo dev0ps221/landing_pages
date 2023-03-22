@@ -35,9 +35,9 @@ nav .burger{
     }
     nav,nav *{
         transition: .4s;
+        z-index: 1;
     }
     nav .links{
-        z-index: 1;
         display: grid;
         background-color: var(--scnd-clr);
         position: fixed;
