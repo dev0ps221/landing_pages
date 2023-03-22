@@ -1,5 +1,6 @@
 #categories{
     padding-inline: var(--inline-pad);
+    padding-block: var(--block-pad);
 }
 #categories .liste{
     display:grid ;
@@ -16,8 +17,14 @@
     display: grid;
     grid-template-rows: 4fr 1fr 1fr;
 }
+@media screen and (max-width:992px) {
+    #categories .liste{
+        grid-template-columns: repeat(3,4fr);
+    }
+}
 @media screen and (max-width:600px) {
     #categories .liste{
-        grid-template-columns: repeat(2,6fr);
+        display: flex;
+        flex-wrap: wrap;
     }
 }
