@@ -1,0 +1,24 @@
+#featuredcollections{
+    display: grid;
+    grid-template-columns: repeat(2,6fr);
+}
+.featuredcollection{
+    display: grid;
+    margin: var(--base-mar);
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+.featuredcollection > *{
+    color: var(--scnd-clr);
+    font-weight: bolder;
+    font-size: 2rem;
+    grid-column: 1;
+    grid-row: 1/-1;
+}
+.featuredcollection img{
+    filter: brightness(50%);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
