@@ -3,7 +3,7 @@
 }
 #rubriques .liste{
     display: grid;
-    grid-template-columns: repeat(4,4fr);
+    grid-template-columns: var(--rubriques-template-columns);
 }
 #rubriques .liste .rubrique{
     display: grid;
@@ -23,6 +23,6 @@
 #rubriques .liste .rubrique >*:not(img){
     opacity: .3;
 }
-#rubriques .liste .rubrique:hover >*:not(img){
+#rubriques .liste .rubrique:hover >*:not(img),#rubriques .liste .rubrique:focus >*:not(img){
     opacity: 1;
 }

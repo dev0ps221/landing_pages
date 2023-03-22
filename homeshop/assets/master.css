@@ -20,6 +20,7 @@
     --nav-height:60px;
     --button-width:250px;
     --logobox-width:10%;
+    --rubriques-template-columns:repeat(4,4fr);
 
     /* //colors */
     --text-clr:#333;
@@ -105,6 +106,7 @@ button{
     /* //dimensions */
         --nav-height:40px;
         --logobox-width:30%;
+        --rubriques-template-columns:repeat(2,6fr);
     }
 }
 body{
