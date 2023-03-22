@@ -1,5 +1,7 @@
 #rubriques{
     padding-inline:var(--inline-pad);
+}
+#rubriques .liste{
     display: grid;
     grid-template-columns: repeat(3,4fr);
 }
