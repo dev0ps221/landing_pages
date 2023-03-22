@@ -1,0 +1,9 @@
+footer{
+    background: var(--scnd-clr);
+}
+footer *{
+    color: var(--scnd-text-clr);
+}
+footer .wrapper{
+    padding-inline:var(--inline-pad) ;
+}
