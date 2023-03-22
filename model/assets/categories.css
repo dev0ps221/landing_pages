@@ -1,0 +1,7 @@
+#categories{
+    padding-inline: var(--inline-pad);
+}
+#categories .liste{
+    display:grid ;
+    grid-template-columns: repeat(4,3fr);
+}
