@@ -15,3 +15,7 @@
     height: 100%;
     grid-gap:1rem;
 }
+#lastones h1{
+    font-size: 2rem;
+    text-align: center;
+}
