@@ -1,0 +1,16 @@
+#featured{
+    padding-inline: var(--inline-pad);
+}
+#featured .featured{
+    display: grid;
+    grid-template-columns: repeat(2,6fr);
+}
+#featured .featured .databox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+#featured img{
+    width: 100%;
+}
