@@ -1,0 +1,5 @@
+#rubriques{
+    padding-inline:var(--inline-pad);
+    display: grid;
+    grid-template-columns: repeat(3,4fr);
+}
