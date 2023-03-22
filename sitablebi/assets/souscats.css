@@ -21,3 +21,17 @@
     font-weight: bolder;
     opacity: .9;
 }
+@media screen and (max-width:640px) {
+    #souscats{
+        display: grid;
+        padding-inline: var(--inline-pad);
+        grid-template-columns: 12fr;
+    }
+    #souscats .souscat{
+        width: 100%;
+        min-height: 40vh;
+    }
+    .souscat .data p{
+        display: none;
+    }
+}

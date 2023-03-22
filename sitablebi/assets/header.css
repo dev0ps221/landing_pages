@@ -22,6 +22,7 @@ header .logobox img{
     box-shadow: none;
 }
 header .heading{
+    isolation: isolate;
     padding: 0;
     height: var(--heading-height);
 }

@@ -86,6 +86,7 @@ p{
 }
 button{
     margin-inline: auto;
+    margin-block: var(--base-mar);
     width: var(--button-width);
     background: var(--text-clr);
     font-weight: bolder;
@@ -139,4 +140,21 @@ body{
     color: var(--text-clr);
     font-family: var(--font-family);
     font-size: var(--text);
+}
+
+.linebehind{
+    position: relative;
+    isolation: isolate;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.8rem;
+}
+.linebehind::before{
+    content: '';
+    position: absolute;
+    border-top: .5em solid var(--scnd-clr);
+    top: 50%;
+    width: 100%;
+    left: 0;
+    z-index: -1;
 }
