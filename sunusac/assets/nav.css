@@ -43,6 +43,7 @@ nav > *{
     margin-block: var(--base-mar);
 }
 nav,nav *{
+    transition: .5s;
     color: var(--scnd-clr);
     font-weight: bolder;
 }
@@ -51,6 +52,9 @@ nav .burger{
 }
 
 @media screen and (max-width:640px) {
+    nav{
+        padding-inline: unset;
+    }
     nav,nav *{
         transition: .4s;
     }
@@ -68,6 +72,7 @@ nav .burger{
         text-align: center;
     }
     nav .burger{
+        margin: var(--base-mar);
         z-index: 10;
         display: grid;
         cursor: pointer;
@@ -82,6 +87,9 @@ nav .burger{
         content: "";
         width: 100%;
         height: 10%;
+        background-color: var(--scnd-clr);
+    }
+    nav.inpage .burger::after,nav.inpage .burger::before{
         background-color: var(--scnd-text-clr);
     }
     nav .burger::after{
