@@ -4,6 +4,15 @@
 #featured .featured{
     display: grid;
     grid-template-columns: repeat(2,6fr);
+    margin-block: var(--block-mar);
+}
+#featured .featured:nth-child(even) .databox{
+    grid-column: 1;
+    grid-row: 1;
+}
+#featured .featured:nth-child(even) .imgbox{
+    grid-column: 2;
+    grid-row: 1;
 }
 #featured .featured .databox{
     display: flex;
