@@ -1,0 +1,235 @@
+
+.xlide,.xlide *{
+    box-sizing:border-box !important;
+}
+.xlide .controlbar .before,.xlide .controlbar .after{
+    background:#222;
+    padding:10px;
+    width:25px;
+    color:#eee;
+    display: flex;
+    justify-content:center;
+    text-align:center;
+    align-items: center;
+    font-size:18px;
+    cursor:pointer;
+    position:absolute;
+    top:45%;
+}
+.xlide .controlbar .after{
+    right: 0;
+}
+.xlide .wrapper{
+    isolation:isolate;
+    position: relative;
+    align-items:center;
+    display:flex;
+    overflow:hidden;
+    width:100%;
+    height: 100%;
+}
+.xlide{
+    display: flex;
+    flex-direction: column;
+    isolation:isolate;
+    position: relative;
+    --in-animation:fadeIn;
+    --out-animation:fadeOut;
+    --slide-height:100%;
+    --slide-position:0;
+    --transition-time:.5s;
+    height:var(--slide-height);
+}
+.xlide .xlide-item{
+    transition:var(--transition-time);
+    position: relative;
+    isolation: isolate;
+    display: grid;
+    background:#777;
+    min-width: 100%;
+    min-height: calc(var(--slide-height));
+    transform:translateX(
+        calc(
+            (
+                -100% 
+                    * 
+                var(--slide-position)
+            )
+                
+        ) 
+    );
+}
+.xlide .xlide-item > *{
+    grid-column: 1;
+    grid-row: 1/-1;
+}
+.xlide .xlide-item img{
+    position: absolute;
+    z-index: -1;
+}
+.vslider .wrapper{
+    flex-direction:column;
+}
+.xlide .wrapper.x3 .xlide-item{
+    min-width: 33%;
+    margin-block: end;
+}
+.xlide.vslider .wrapper .xlide-item{
+    min-width: 100%;
+    min-height: 100%;
+    transform:translateY(
+        calc(
+            (
+                -100% 
+                    * 
+                var(--slide-position)
+            ) 
+                
+        ) 
+    );
+}
+.xlide.vslider .wrapper.x3 .xlide-item{
+    min-height: 33%;
+    margin-block: end;
+}
+.xlide img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.xlide .data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff3;
+}
+.xlide .data .title{
+    font-weight: bolder;
+    font-size: 2rem;
+    color: #fff;
+    padding: 10px;
+    text-shadow: 0 0 5px #2228;
+}
+.xlide .controlbar{
+    position: relative;
+    isolation: isolate;
+    display:flex;
+    width:100%;
+    justify-content:space-between;
+}
+.xlide .previews{
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    justify-content: flex-start;
+}
+.xlide .previews .preview{
+    filter: grayscale(80%);
+}
+.xlide .previews .preview.active{
+    filter: none;
+}
+.xlide.rotate{
+    transform-origin:left;
+    --out-animation:rotateReverse;
+    --in-animation:rotate;
+}
+.xlide.reverse-rotate{
+    --out-animation:rotate;
+    --in-animation:rotateReverse;
+}
+.xlide.topdir{
+    --out-animation:fromBottom;
+    --in-animation:fromTop;
+}
+.xlide.bottomdir{
+    --out-animation:fromTop;
+    --in-animation:fromBottom;
+}
+.xlide .out{
+    animation:var(--out-animation) calc(var(--transition-time)* 2 ) forwards;
+}
+.xlide .in{
+    animation:var(--in-animation) calc(var(--transition-time) * 2 ) forwards;
+}
+@keyframes fadeOut{
+    to{
+        opacity: 0;
+    }
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes fromTop {
+    from{
+        transform: translateY(-100%);
+    }
+}
+@keyframes fromBottom {
+    from{
+        transform: translateY(100%);
+    }
+}
+@keyframes rotate {
+    from{
+        opacity: 0;
+        width: 5%;
+        transform: rotateZ(-95deg);
+    }
+    80%{
+        width: 70%;
+    }
+    to{
+        opacity: 1;
+        width: 100%;
+    }
+}
+@keyframes rotateReverse {
+    from{
+        opacity: 0;
+        width: 5%;
+        transform: rotateZ(95deg);
+    }
+    80%{
+        width: 70%;
+    }
+    to{
+        opacity: 1;
+        width: 100%;
+    }
+}
+@keyframes fromLeft {
+    from{
+        transform: translateX(-100%);
+    }
+}
+@keyframes fromRight {
+    from{
+        transform: translateX(100%);
+    }
+}
+
+
+
+
+.bgred{
+    background: red;
+}
+.bgblue{
+    background: #55e;
+}
+.bgblue-a{
+    background: #55e7;
+}
+.bgpurp{
+    background: #92e;
+}
+.bgpurp-a{
+    background: #92e7;
+}

@@ -48,7 +48,8 @@ window.addEventListener(
     'scroll',e=>{
         console.log('scrolling')
         const scroll = window.scrollY
-        if (scroll > 300) {
+        const limit = parseInt(getComputedStyle(document.querySelector(':root')).getPropertyValue('--nav-height').replace('px',''))
+        if (scroll > limit) {
             document.querySelector('nav').classList.add('inpage')
         }
 
