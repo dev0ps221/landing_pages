@@ -3,5 +3,26 @@
 }
 #rubriques .liste{
     display: grid;
-    grid-template-columns: repeat(3,4fr);
+    grid-template-columns: repeat(4,4fr);
+}
+#rubriques .liste .rubrique{
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+#rubriques .liste .rubrique >*{
+    grid-column: 1;
+    grid-row: 1/-1;
+    background: var(--bg-clr);
+}
+#rubriques .liste img{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+#rubriques .liste .rubrique >*:not(img){
+    opacity: .3;
+}
+#rubriques .liste .rubrique:hover >*:not(img){
+    opacity: 1;
 }

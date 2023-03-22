@@ -45,8 +45,7 @@
 }
 h1,h2,h3,h4,h5,h6{
     font-size: var(--huge-text);
-    background: var(--scnd-clr);
-    color: var(--scnd-text-clr);
+    color: var(--text-clr);
     padding-top: var(--base-pad);
     margin-bottom: var(--base-mar);
     border-bottom: 2px solid var(--bg-clr);
@@ -56,6 +55,7 @@ a{
     font-weight: bolder;
 }
 img{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 var(--scnd-clr);
     object-fit: cover;
 }
 p,button,textarea,input{
