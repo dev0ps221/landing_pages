@@ -4,7 +4,6 @@ nav{
     width: 100%;
     top: 0;
     height: var(--nav-height);
-    color: var(--scnd-text-clr);
     z-index: 10;
     display: flex;
     justify-content: space-between;
@@ -15,6 +14,7 @@ nav.inpage{
     background: var(--scnd-clr);
 }
 nav .links{
+    mix-blend-mode: difference;
     width: 40%;
 }
 nav .logobox{
@@ -43,7 +43,8 @@ nav > *{
     margin-block: var(--base-mar);
 }
 nav,nav *{
-    color: var(--scnd-text-clr);
+    color: var(--scnd-clr);
+    font-weight: bolder;
 }
 nav .burger{
     display: none;
