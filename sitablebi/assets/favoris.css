@@ -1,0 +1,20 @@
+#favoris{
+    padding-block: var(--block-pad);
+    padding-inline: var(--inline-pad);
+}
+#favoris .liste{
+    display: grid;
+    grid-template-columns: var(--fav-template-columns);
+}
+#favoris .favori{
+    display: grid;
+    margin-block: var(--block-mar);
+    margin-inline: var(--base-mar);
+}
+#favoris .favori *{
+    width: 100%;
+}
+#favoris img{
+    box-shadow: none;
+    height: 35vh;
+}

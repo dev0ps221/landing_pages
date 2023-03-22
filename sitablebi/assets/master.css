@@ -6,7 +6,7 @@
     /* //paddings */
     --base-pad:10px;
     --base-mar:5px;
-    --inline-pad:15rem;
+    --inline-pad:18rem;
     --inline-mar:5rem;
     --block-pad:4rem;
     --block-mar:2rem;
@@ -28,6 +28,7 @@
     --logobox-width:100%;
     --logobox-height:136px;
     --heading-height:272px;
+    --fav-template-columns:repeat(5,2.3fr);
     --rubriques-template-columns:repeat(4,4fr);
 
     /* //colors */
@@ -130,6 +131,7 @@ button{
         --logobox-height:66px;
         --heading-height:122px;
         --rubriques-template-columns:repeat(2,6fr);
+        --fav-template-columns:repeat(2,6fr);
     }
 }
 body{
