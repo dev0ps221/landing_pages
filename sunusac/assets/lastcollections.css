@@ -1,0 +1,27 @@
+#lastcollections{
+    display: grid;
+}
+#lastcollections .lastcollection{
+    display: grid;
+    padding-inline:var(--inline-pad) ;
+    grid-template-columns: repeat(2,6fr);
+    height: 30vh;
+    align-items: center;
+    background: var(--scnd-text-clr);
+}
+#lastcollections .lastcollection *{
+    color: var(--scnd-clr);
+}
+#lastcollections .lastcollection:nth-child(odd){
+    background: var(--scnd-clr);
+}
+#lastcollections .lastcollection:nth-child(odd) *{
+    color: var(--scnd-text-clr);
+}
+#lastcollections .lastcollection > *{
+    box-shadow: none;
+    padding-block: var(--block-pad);
+    width: 100%;
+    height: 100%;
+}
+
