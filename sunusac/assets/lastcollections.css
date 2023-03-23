@@ -5,9 +5,11 @@
     display: grid;
     padding-inline:var(--inline-pad) ;
     grid-template-columns: repeat(2,6fr);
-    height: 30vh;
     align-items: center;
     background: var(--scnd-text-clr);
+}
+#lastcollections .lastcollection img{
+    height: 50vh;
 }
 #lastcollections .lastcollection *{
     color: var(--scnd-clr);
