@@ -25,8 +25,8 @@
     /* //dimensions */
     --nav-height:60px;
     --button-width:250px;
-    --logobox-width:100%;
-    --logobox-height:84px;
+    --logobox-width:10%;
+    --logobox-height:var(--nav-height);
     --heading-height:672px;
 
     /* //colors */

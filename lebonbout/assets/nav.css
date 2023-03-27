@@ -1,0 +1,26 @@
+nav{
+    align-items: center;
+    padding-inline: var(--inline-pad);
+    display: flex;
+    height: var(--nav-height);
+    position: sticky;
+    top: 0;
+}
+.logobox{
+    width: var(--logobox-width);
+    height: var(--logobox-height);
+}
+.logobox img{
+    object-fit:cover;
+    box-shadow: none;
+    width: 100%;
+    height: 100%;
+}
+nav .links{
+    display: flex;
+}
+nav .links .link{
+    color: var(--btn-clr);
+    padding: var(--base-pad);
+    margin: var(--base-mar);
+}
