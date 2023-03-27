@@ -1,3 +1,6 @@
+nav,nav *{
+    transition: .4s;
+}
 nav{
     align-items: center;
     padding-inline: var(--inline-pad);
@@ -6,9 +9,16 @@ nav{
     position: sticky;
     top: 0;
 }
+nav.inpage{
+    color: var(--bg-clr);
+    background: var(--text-clr);
+}
 .logobox{
     width: var(--logobox-width);
     height: var(--logobox-height);
+}
+.inpage .logobox{
+    background-color: var(--bg-clr);
 }
 .logobox img{
     object-fit:cover;

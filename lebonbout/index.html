@@ -25,6 +25,20 @@
             </div>
             <div class="burger"></div>
         </nav>
+    <script>
+        window.addEventListener(
+            'scroll',
+            e=>{
+                const navHeight = parseInt(getComputedStyle(document.documentElement)
+    .getPropertyValue('--nav-height').replace('px',''))
+                if(window.scrollY > navHeight){
+                    document.querySelector('nav').classList.add('inpage')
+                }else{
+                    document.querySelector('nav').classList.remove('inpage')
+                }
+            }
+        )
+    </script>
     <!-- //endnav -->
     <!-- //liste_categories -->
     <link rel="stylesheet" href="assets/liste_categories.css">
