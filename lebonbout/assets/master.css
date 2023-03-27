@@ -30,11 +30,11 @@
     --heading-height:672px;
 
     /* //colors */
-    --text-clr:#333;
-    --scnd-text-clr:#222;
-    --bg-clr:#fff;
-    --scnd-clr:#555;
-    --btn-text-clr:#eee;
+    --text-clr:#fff;
+    --scnd-text-clr:#ddd;
+    --bg-clr:#32594a;
+    --scnd-clr:#74c6a6;
+    --btn-text-clr:#ccc;
 
 }
 *,*::after,*::before{
