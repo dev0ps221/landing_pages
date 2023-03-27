@@ -59,7 +59,7 @@ h1,h2,h3,h4,h5,h6{
 a{
     font-weight: bolder;
 }
-a:hover{
+a:hover,a:focus{
     opacity: .6;
 }
 img{
@@ -89,6 +89,11 @@ button{
     background: none;
     border: 2px solid var(--text-clr);
     cursor: pointer;
+}
+button:active,button:focus{
+    background: var(--text-clr);
+    color: var(--bg-clr) !important;
+    font-weight: bolder;
 }
 @media screen and (max-width:992px) {
     :root{
