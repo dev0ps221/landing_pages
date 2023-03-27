@@ -1,0 +1,14 @@
+#liste_categories{
+    padding-inline: var(--inline-pad);
+}
+#liste_categories .liste{
+    display: grid;
+    grid-template-columns: repeat(8,3fr);
+}
+#liste_categories .liste .categorie{  
+    margin-inline: var(--base-mar);
+}
+#liste_categories .liste .categorie img{  
+    width: 100%;
+    height: 100%;
+}

@@ -17,10 +17,22 @@ nav{
     height: 100%;
 }
 nav .links{
+    height: var(--logobox-height);
     display: flex;
 }
 nav .links .link{
     color: var(--btn-clr);
     padding: var(--base-pad);
     margin: var(--base-mar);
+}
+nav .burger{
+    display: none;
+}
+@media screen and (max-width:600px){
+    nav .links{
+        display: none;
+    }
+    nav .burger{
+        display: grid;
+    }
 }

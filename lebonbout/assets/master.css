@@ -81,10 +81,11 @@ button{
     margin-inline: auto;
     margin-block: var(--base-mar);
     width: var(--button-width);
-    background: var(--text-clr);
     font-weight: bolder;
     font-size: var(--big-text);
     color: var(--btn-text-clr) !important;
+    background: none;
+    border: 2px solid var(--text-clr);
     cursor: pointer;
 }
 @media screen and (max-width:992px) {
@@ -101,7 +102,7 @@ button{
 
         /* //dimensions */
         --nav-height:40px;
-        --logobox-width:100%;
+        --logobox-width:15%;
     }
 }
 @media screen and (max-width:640px) {
@@ -122,7 +123,7 @@ button{
 
         /* //dimensions */
         --nav-height:40px;
-        --logobox-width:100%;
+        --logobox-width:30%;
         --logobox-height:66px;
         --heading-height:372px;
         --rubriques-template-columns:repeat(2,6fr);
