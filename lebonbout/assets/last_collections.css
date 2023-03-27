@@ -1,0 +1,20 @@
+#last_collections{
+    padding-inline: var(--inline-pad);
+}
+#last_collections .lastcollection{
+    padding-block: var(--block-pad);
+}
+#last_collections h2,#last_collections h3{
+    text-align: center;
+}
+#last_collections img{
+    width: 100%;
+    height: 30vh;
+}
+.lastcollection .last_produits{
+    display: grid;
+    grid-template-columns: repeat(4,3fr);
+}
+.lastcollection .last_produits .lastproduit{
+    margin: var(--base-mar);
+}
