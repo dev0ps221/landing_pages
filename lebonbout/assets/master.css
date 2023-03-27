@@ -28,6 +28,8 @@
     --logobox-width:10%;
     --logobox-height:var(--nav-height);
     --heading-height:672px;
+    --featured-template-columns:repeat(2,6fr);
+    --cats-template-columns:repeat(8,3fr);
 
     /* //colors */
     --text-clr:#fff;
@@ -126,8 +128,8 @@ button{
         --logobox-width:30%;
         --logobox-height:66px;
         --heading-height:372px;
-        --rubriques-template-columns:repeat(2,6fr);
-        --fav-template-columns:repeat(2,6fr);
+        --cats-template-columns:repeat(4,3fr);
+        --featured-template-columns:12fr;
     }
 }
 body{

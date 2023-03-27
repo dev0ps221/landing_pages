@@ -3,10 +3,11 @@
 }
 #liste_categories .liste{
     display: grid;
-    grid-template-columns: repeat(8,3fr);
+    grid-template-columns: var(--cats-template-columns);
 }
 #liste_categories .liste .categorie{  
     margin-inline: var(--base-mar);
+    height: 15vh;
 }
 #liste_categories .liste .categorie img{  
     width: 100%;

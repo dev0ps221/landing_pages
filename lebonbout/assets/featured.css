@@ -1,6 +1,6 @@
 #featured{
     display: grid;
-    grid-template-columns: repeat(2,50%);
+    grid-template-columns: var(--featured-template-columns);
     padding-inline: var(--inline-pad);
     padding-block: var(--block-pad);
 }
