@@ -1,0 +1,47 @@
+:root{
+    --ipad:15rem;
+    --bpad:2.5rem;
+    --base-pad:5px;
+    --base-mar:5px;
+    --clr:#fff;
+    --bg-clr:#111;
+    --scnd-clr:#111;
+    --thrd-clr:#2224;
+
+    --header-height:760px;
+    --header-height:100vh;
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+a{
+    color: var(--clr);
+    padding: var(--base-pad);
+    margin: var(--base-mar);
+}
+a:hover,a:focus,a:focus-within{
+    opacity: .6;
+}
+img{
+    object-fit: cover;
+}
+body{
+    display: grid;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: var(--bg-clr);
+    background-image: url('/assets/firstbackground.avif');
+    color: var(--clr);
+    background-position: center;
+    background-size:100%;
+}
+.bx{
+    font-size: 2rem;
+}
+nav{
+    position: sticky;
+    top: 0;
+}

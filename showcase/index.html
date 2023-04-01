@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOWCASE</title>
+    <link rel="stylesheet" href="assets/css/boxicons.min.css">
+    <link rel="stylesheet" href="assets/css/master.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- //header -->
+        <header>
+            <link rel="stylesheet" href="assets/css/header.css">
+            <!-- <img src="assets/firstheader.avif" class="overlaypic"> -->
+            <img src="assets/firstheader.avif" class="overlaypic">
+            <div class="overlaydata">
+                <div class="branding">
+                    <div class="networks-icons">
+                        <h2>
+                            RETROUVEZ MOI SUR
+                        </h2>
+                        <div class="icons">
+                            <a href="/" class="icon">
+                                <span class="bx bxl-youtube">
+                                </span>
+                            </a>
+                            <a href="/" class="icon">
+                                <span class="bx bxl-facebook">
+                                </span>
+                            </a>
+                            <a href="/" class="icon">
+                                <span class="bx bxl-instagram">
+                                </span>
+                            </a>
+                            <a href="/" class="icon">
+                                <span class="bx bxl-twitter">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="logobox">
+                        <img src="" alt="logo">
+                    </div>
+                </div>
+                <nav class="navbar">
+                    <link rel="stylesheet" href="assets/css/nav.css">
+                    <div class="links">
+                        <a href="" class="link">Accueil</a>
+                        <a href="" class="link">Biographie</a>
+                        <a href="" class="link">Playlist</a>
+                        <a href="" class="link">Evenements</a>
+                        <a href="" class="link">Galerie</a>
+                        <a href="" class="link">Contact</a>
+                    </div>
+                    <script src="assets/js/nav.js"></script>
+                </nav>
+                <div class="heading">
+                    <h2>
+                        A PRESENT DISPONIBLE !
+                    </h2>
+                    <h1>
+                        PROJET UN
+                    </h1>
+                    <a href="">
+                        VOIR MAINTENANT
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- //videos hook -->
+    <style>
+        #videoshook{
+            background: var(--clr);
+            color:var(--scnd-clr);
+            text-align: center;
+        }
+        #videoshook > *,#videoshook{
+            padding-inline: var(--ipad);
+            padding-block: var(--bpad);
+        }
+        #videoshook img{
+            width: 100%;
+        }
+    </style>
+    <div id="videoshook">
+        <h2>
+            VIDEOS
+        </h2>
+        <div class="previewbox">
+            <img src="assets/firstheader.avif" alt="VIDEOS">
+        </div>
+        <button>
+            ACCEDER A LA GALERIE VIDEO
+        </button>
+    </div>
+
+    <div id="shortbio">
+        <style>
+            #shortbio{
+                display: grid;
+                grid-template-columns: repeat(2,6fr);
+            }
+            #shortbio{
+                padding-inline: var(--ipad);
+                padding-block: var(--bpad);
+            }
+            #shortbio >*{
+                padding-inline: calc(var(--ipad)/2);
+            }
+        </style>
+        <div class="shortbiotext">
+            <h2> 
+                MA PHILOSOPHIE
+            </h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            </p>
+            <p> 
+                Fugiat quos expedita reprehenderit iste facilis incidunt recusandae repellendusx
+                Exercitationem labore eos vero, obcaecati perferendis ad magnam blanditiis, similique tempore nulla fugiat.
+            </p>
+        </div>
+    </div>
+
+    <div id="shortprojets">
+        <link rel="stylesheet" href="assets/css/shortprojects.css">
+        <h2>
+            PROJETS
+        </h2>
+        <div class="liste">
+            <div class="shortprojet">
+                <img src="assets/projet1.avif" alt="projet">
+                <div class="data">
+                    NOV - 2023
+                </div>
+            </div>
+            <div class="shortprojet">
+                <img src="assets/projet2.avif" alt="projet">
+                <div class="data">
+                    NOV - 2023
+                </div>
+            </div>
+            <div class="shortprojet">
+                <img src="assets/projet3.avif" alt="projet">
+                <div class="data">
+                    NOV - 2023
+                </div>
+            </div>
+            <div class="shortprojet">
+                <img src="assets/projet4.avif" alt="projet">
+                <div class="data">
+                    NOV - 2023
+                </div>
+            </div>
+            <div class="shortprojet">
+                <img src="assets/projet5.avif" alt="projet">
+                <div class="data">
+                    NOV - 2023
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        #nextevent{
+            background: var(--scnd-clr);
+            max-height: 50vh;
+            display: flex;
+            position: relative;
+            isolation: isolate;
+        }
+        #nextevent > *{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 50%;
+            height: 100%;
+            left: -2%;
+        }
+        #nextevent > img{
+            left: -7%;
+            width: 65%;
+            transform: skewX(-10deg);
+        }
+        #nextevent::after{
+            content:'';
+            position: absolute;
+            width: 65%;
+            height: 100%;
+            background: var(--thrd-clr);
+            top: 0;
+            left: -15%;
+            z-index: -1;
+            transform: skewX(10deg);
+        }
+        #nextevent .wrapper{
+            padding: var(--base-pad);
+            padding-block: var(--bpad);
+        }
+        #nextevent button{
+            width: 50%;
+        }
+    </style>
+    <div id="nextevent">
+        <img src="assets/firstbackground.avif" alt="evenement">
+        <div class="wrapper">
+            <h2>
+                EVENEMENT A VENIR
+            </h2>
+            <h2>NOVEMBRE</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aliquam suscipit facilis quidem sit quos! Est incidunt corrupti ipsum officiis
+            </p>
+            <button>
+                PLUS..
+            </button>
+        </div>
+    </div>
+
+
+    <div id="photoshook">
+        <style>
+            #photoshook{
+                text-align: center;
+                display: grid;
+                padding-inline: var(--ipad);
+                padding-block: var(--bpad);
+                background-color: var(--bg-clr);
+                color: var(--clr);
+                position: relative;
+                isolation: isolate;
+            }
+            #photoshook::before{
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: var(--thrd-clr);
+                z-index: -1;
+            }
+            #photoshook > * {
+                padding-block: var(--bpad);
+            }
+            #photoshook .liste{
+                display: grid;
+                grid-template-columns: repeat(4,3fr);
+            }
+            #photoshook .liste >*{
+                width: calc(100% - (var(--base-mar)*4));
+                height: calc(100% - (var(--base-mar)*4));
+                margin: auto;
+            }
+            #photoshook .liste .photo:nth-child(3){
+                grid-row: span 2;
+            }
+            #photoshook .liste .photo:nth-child(5){
+                grid-column: span 2;
+            }
+        </style>
+        <h2>
+            PHOTOS
+        </h2>
+        <div class="liste">
+            <img src="assets/artiste1.avif" alt="photo" class="photo">
+            <img src="assets/artiste2.avif" alt="photo" class="photo">
+            <img src="assets/artiste3.avif" alt="photo" class="photo">
+            <img src="assets/artiste4.avif" alt="photo" class="photo">
+            <img src="assets/artiste5.avif" alt="photo" class="photo">
+            <img src="assets/artiste6.avif" alt="photo" class="photo">
+        </div>
+    </div>
+</body>
+</html>

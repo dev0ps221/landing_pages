@@ -1,0 +1,46 @@
+
+header{
+    display: grid;
+    height: var(--header-height);
+}
+header img{
+    object-fit: cover;
+}
+header > *{
+    grid-row: 1/-1;
+    grid-column: 1;
+    height: 100%;
+}
+header .overlaypic{
+    width: 100%;
+    filter: brightness(50%);
+    font-weight: bolder;
+    z-index: -1;
+}
+header .overlaydata{
+    display: flex;
+    flex-direction: column;
+    padding-inline: var(--ipad);
+    padding-block: var(--bpad);
+}
+header .branding{
+    display: flex;
+    justify-content: flex-start;
+}
+header .branding > *{
+    width: 40%;
+    text-align: center;
+}
+header .heading{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin-block: auto;
+}
+header .heading > *{
+    padding:var(--base-pad);
+    margin: var(--base-mar);
+}
+header .heading h1{
+    font-size: 5rem;
+}

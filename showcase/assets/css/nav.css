@@ -1,0 +1,19 @@
+nav{
+    z-index: 1;
+    animation-timing-function: ease-in;
+    transition: 1s;
+    display: flex;
+    justify-content: center;
+    border: 2px solid var(--clr);
+    border-left: none;
+    border-right: none;
+    padding-block: calc(var(--bpad)/2);
+    margin-block: calc(var(--bpad)/3);
+}
+body > nav{
+    background-image: url('/assets/firstbackground.avif');
+    background: var(--bg-clr);
+}
+body > nav *{
+    color: var(--clr);
+}
