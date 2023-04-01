@@ -1,0 +1,12 @@
+
+#shortbio{
+    display: grid;
+    grid-template-columns: repeat(2,6fr);
+}
+#shortbio{
+    padding-inline: var(--ipad);
+    padding-block: var(--bpad);
+}
+#shortbio >*{
+    padding-inline: calc(var(--ipad)/2);
+}

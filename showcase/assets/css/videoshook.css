@@ -1,0 +1,13 @@
+
+#videoshook{
+    background: var(--clr);
+    color:var(--scnd-clr);
+    text-align: center;
+}
+#videoshook > *,#videoshook{
+    padding-inline: var(--ipad);
+    padding-block: var(--bpad);
+}
+#videoshook img{
+    width: 100%;
+}
