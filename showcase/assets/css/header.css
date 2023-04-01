@@ -47,3 +47,10 @@ header .heading h1{
 header .heading a{
     text-decoration: underline;
 }
+header .networks-icons{
+    margin-inline: unset !important;
+}
+header .bx {
+    padding: 0;
+    padding: 0;
+}

@@ -45,6 +45,8 @@ body{
 }
 
 .bx{
+    margin: var(--base-mar);
+    padding: var(--base-pad);
     font-size: 2rem;
 }
 nav{
@@ -79,4 +81,10 @@ button:active,button:focus,button:hover{
     background: var(--scnd-clr) !important;
     border: 2px solid var(--clr);
     font-weight: bolder;
+}
+.networks-icons{
+    padding: var(--base-pad);
+    text-align: center;
+    margin-inline: auto;
+    background-color: var(--thrd-clr);
 }
