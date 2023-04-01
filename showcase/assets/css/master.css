@@ -88,3 +88,16 @@ button:active,button:focus,button:hover{
     margin-inline: auto;
     background-color: var(--thrd-clr);
 }
+
+
+@media screen and (max-width:992px) {
+    :root{
+        --ipad:5rem;
+        --bpad:2.5rem;
+        --imar:15rem;
+        --bmar:2.5rem;
+        --base-radius:.5rem;
+        --base-pad:1.5rem;
+        --base-mar:5px;
+    }
+}

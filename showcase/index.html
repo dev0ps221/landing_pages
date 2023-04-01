@@ -243,17 +243,18 @@
             padding-inline: var(--ipad);
         }
         #instafollow .liste{
+            padding-inline: calc(var(--ipad)/2);
             display: grid;
-            grid-template-columns: repeat(5,3fr);
+            grid-template-columns: repeat(4,3fr);
         }
         #instafollow .liste .instapic{
             display: grid;
             position: relative;
             isolation: isolate;
-            width: calc(100% - var(--bmar));
+            width: calc(100% - (var(--bmar)/2));
+            height: calc(100% - (var(--bmar)/2));
         }
         #instafollow .liste .instapic > *{
-            padding-inline: var(--ipad);
             grid-column: 1;
             grid-row: 1/-1;
             align-items: center;
