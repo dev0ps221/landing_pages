@@ -37,6 +37,7 @@ body{
     display: grid;
     width: 100vw;
     min-height: 100vh;
+    overflow-x: hidden;
     background-color: var(--bg-clr);
     background-image: url('/assets/firstbackground.avif');
     color: var(--clr);
