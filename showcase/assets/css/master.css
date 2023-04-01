@@ -4,7 +4,7 @@
     --imar:15rem;
     --bmar:2.5rem;
     --base-radius:.5rem;
-    --base-pad:5px;
+    --base-pad:1.5rem;
     --base-mar:5px;
     --clr:#fff;
     --bg-clr:#111;
@@ -55,6 +55,7 @@ p,button,textarea,input,ul{
     padding: var(--base-pad);
     border-radius: var(--base-radius);
     border: none;
+    border-bottom:5px solid #3335;
 }
 textarea,input{
     margin-block: var(--base-mar);

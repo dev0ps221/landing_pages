@@ -179,17 +179,41 @@
     </div>
 
     <!-- //join newsletter -->
+    <style>
+        #joinnews{
+            padding-inline: var(--ipad);
+            margin-block: var(--bmar);
+            padding-block: var(--bpad);
+        }
+        #joinnews h1{
+            text-align: center;
+        }
+        #joinnews form{
+            margin: auto;
+            width: 50%;
+        }
+        #joinnews .field{
+            display: grid;
+            padding: var(--bpad);
+        }
+        #joinnews button{
+            margin-inline: auto;
+        }
+    </style>
     <div id="joinnews">
-        <h2>
-            REJOIGNEZ NOTRE NEWSLETTER
-        </h2>
+        <h1>
+            REJOIGNEZ LA NEWSLETTER
+        </h1>
         <form action="">
             <div class="field">
                 <input type="email" placeholder="VOTRE ADRESSE EMAIL">
             </div>
-            <button>
-                S'INSCRIRE
-            </button>
+
+            <div class="field">
+                <button>
+                    S'INSCRIRE
+                </button>
+            </div>
         </form>
     </div>
 </body>

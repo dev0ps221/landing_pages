@@ -44,6 +44,6 @@ header .heading > *{
 header .heading h1{
     font-size: 5rem;
 }
-header a{
+header .heading a{
     text-decoration: underline;
 }
