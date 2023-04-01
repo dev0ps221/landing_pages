@@ -1,6 +1,8 @@
 :root{
     --ipad:15rem;
     --bpad:2.5rem;
+    --imar:15rem;
+    --bmar:2.5rem;
     --base-pad:5px;
     --base-mar:5px;
     --clr:#fff;
@@ -10,6 +12,8 @@
 
     --header-height:760px;
     --header-height:100vh;
+    --button-width:250px;
+    --button-height:50px;
 }
 *{
     margin: 0;
@@ -45,4 +49,22 @@ body{
 nav{
     position: sticky;
     top: 0;
+}
+button{
+    margin-inline: auto;
+    margin-block: var(--bmar);
+    min-width: var(--button-width);
+    min-height: var(--button-height);
+    font-weight: bolder;
+    font-size: var(--big-text);
+    color: var(--scnd-clr) !important;
+    background: var(--clr);
+    border: 2px solid var(--scnd-clr);
+    cursor: pointer;
+}
+button:active,button:focus,button:hover{
+    color: var(--clr) !important;
+    background: var(--scnd-clr) !important;
+    border: 2px solid var(--clr);
+    font-weight: bolder;
 }
