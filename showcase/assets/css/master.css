@@ -3,6 +3,7 @@
     --bpad:2.5rem;
     --imar:15rem;
     --bmar:2.5rem;
+    --base-radius:.5rem;
     --base-pad:5px;
     --base-mar:5px;
     --clr:#fff;
@@ -49,6 +50,16 @@ body{
 nav{
     position: sticky;
     top: 0;
+}
+p,button,textarea,input,ul{
+    padding: var(--base-pad);
+    border-radius: var(--base-radius);
+    border: none;
+}
+textarea,input{
+    margin-block: var(--base-mar);
+    background-color: var(--bg-clr) !important;
+    color: var(--text-clr) !important;
 }
 button{
     margin-inline: auto;
