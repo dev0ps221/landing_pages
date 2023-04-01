@@ -103,6 +103,7 @@ button:active,button:focus,button:hover{
         --ipad:2.5rem;
         --imar:2.5rem;
         --base-pad:.375rem;
+        --base-mar:2.5px;
     }
-    
+
 }

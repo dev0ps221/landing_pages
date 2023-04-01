@@ -43,3 +43,9 @@
     display: grid;
     color: var(--clr);
 }
+@media screen and (max-width:600px) {
+    
+    #shortprojets .liste{
+        grid-template-columns: 12fr;
+    }
+}
