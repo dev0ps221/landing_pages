@@ -43,6 +43,7 @@
 
 ## SHOWCASE
 > <div style='display:grid;grid-template-columns:repeat(2,6fr);'>
+>    <img src='showcase/preview1.png' alt='preview showcase'  width=300 />
 >    <img src='showcase/preview3.png' alt='preview showcase'  width=300 />
 >    <img src='showcase/preview4.png' alt='preview showcase' width=300 />
 >    <img src='showcase/preview7.png' alt='preview showcase' width=300 />
