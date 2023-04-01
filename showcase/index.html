@@ -236,5 +236,80 @@
                 </span>
             </a>
         </div>
+    </div>
+
+    <style>
+        #instafollow {
+            padding-inline: var(--ipad);
+        }
+        #instafollow .liste{
+            display: grid;
+            grid-template-columns: repeat(5,3fr);
+        }
+        #instafollow .liste .instapic{
+            display: grid;
+            position: relative;
+            isolation: isolate;
+            width: calc(100% - var(--bmar));
+        }
+        #instafollow .liste .instapic > *{
+            grid-column: 1;
+            grid-row: 1/-1;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+        }
+        #instafollow .liste .instapic .data{
+            display: none;
+        }
+        #instafollow .liste .instapic:hover .data{
+            display: grid;
+        }
+        #instafollow .liste .instapic:hover img{
+            filter: brightness(50%);
+            z-index: -1;
+        }
+    </style>
+    <div id="instafollow">
+        <div class="liste">
+            <div class="instapic">
+                <img src="assets/pictures/insta.avif" alt="projet">
+                <h2 class="data">
+                    SUIVEZ MOI SUR INSTA
+                </h2>
+            </div>
+            <div class="instapic">
+                <img src="assets/pictures/projet1.avif" alt="projet">
+                <h2 class="data">
+                    PROJET UN
+                </h2>
+            </div>
+            <div class="instapic">
+                <img src="assets/pictures/artiste2.avif" alt="projet">
+                <h2 class="data">
+                    MOI 2
+                </h2>
+            </div>
+            <div class="instapic">
+                <img src="assets/pictures/projet1.avif" alt="projet">
+                <h2 class="data">
+                    SUIVEZ MOI SUR INSTA
+                </h2>
+            </div>
+            <div class="instapic">
+                <img src="assets/pictures/projet1.avif" alt="projet">
+                <h2 class="data">
+                    SUIVEZ MOI SUR INSTA
+                </h2>
+            </div>
+            <div class="instapic">
+                <img src="assets/pictures/projet1.avif" alt="projet">
+                <h2 class="data">
+                    SUIVEZ MOI SUR INSTA
+                </h2>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
