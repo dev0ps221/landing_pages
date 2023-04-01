@@ -94,10 +94,20 @@ button:active,button:focus,button:hover{
     :root{
         --ipad:5rem;
         --bpad:2.5rem;
+        --bmar:2.5rem;
+        --base-radius:.5rem;
+        --base-pad:.75rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    :root{
+        --ipad:5rem;
+        --bpad:2.5rem;
         --imar:15rem;
         --bmar:2.5rem;
         --base-radius:.5rem;
-        --base-pad:1.5rem;
+        --base-pad:.75rem;
         --base-mar:5px;
     }
 }

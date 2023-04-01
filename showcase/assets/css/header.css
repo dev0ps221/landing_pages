@@ -28,7 +28,7 @@ header .branding{
     justify-content: flex-start;
 }
 header .branding > *{
-    width: 40%;
+    min-width: 40%;
     text-align: center;
 }
 header .heading{
@@ -53,4 +53,9 @@ header .networks-icons{
 header .bx {
     padding: 0;
     padding: 0;
+}
+@media screen and (max-width:992px){
+    header .networks-icons{
+        margin-inline: unset !important;
+    }   
 }
