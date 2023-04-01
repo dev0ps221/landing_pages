@@ -17,3 +17,8 @@ body > nav{
 body > nav *{
     color: var(--clr);
 }
+@media screen and (max-width:600px) {
+    nav .links{
+        display: none;
+    }
+}
