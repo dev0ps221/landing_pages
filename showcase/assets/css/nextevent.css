@@ -1,0 +1,40 @@
+
+#nextevent{
+    background: var(--scnd-clr);
+    max-height: 50vh;
+    display: flex;
+    position: relative;
+    isolation: isolate;
+}
+#nextevent > *{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    left: -2%;
+}
+#nextevent > img{
+    left: -7%;
+    width: 65%;
+    transform: skewX(-10deg);
+}
+#nextevent::after{
+    content:'';
+    position: absolute;
+    width: 65%;
+    height: 100%;
+    background: var(--thrd-clr);
+    top: 0;
+    left: -15%;
+    z-index: -1;
+    transform: skewX(10deg);
+}
+#nextevent .wrapper{
+    padding: var(--base-pad);
+    padding-block: var(--bpad);
+}
+#nextevent button{
+    width: 50%;
+}
